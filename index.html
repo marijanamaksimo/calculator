@@ -3,33 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Calculator</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/styles/app.css" />
+    <title>Modern Calculator</title>
+    <meta name="description" content="A modern, responsive calculator with a beautiful design" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <h1>Calculator</h1>
-    </header>
-
-    <section id="calculator">
-      <input type="number" id="input-number" />
-      <div id="calc-actions">
-        <button type="button" id="btn-add">+</button>
-        <button type="button" id="btn-subtract">-</button>
-        <button type="button" id="btn-multiply">*</button>
-        <button type="button" id="btn-divide">/</button>
+    <div class="container">
+      <h1 class="title">Modern Calculator</h1>
+      
+      <div class="calculator">
+        <div class="calculator-display">
+          <div class="display-content">
+            <div id="display">0</div>
+          </div>
+        </div>
+        
+        <div class="calculator-keypad">
+          <button class="button clear-button" aria-label="Clear all">C</button>
+          <button class="button backspace-button" aria-label="Backspace">⌫</button>
+          <button class="button operation-button" aria-label="Divide">÷</button>
+          
+          <button class="button number-button" aria-label="Seven">7</button>
+          <button class="button number-button" aria-label="Eight">8</button>
+          <button class="button number-button" aria-label="Nine">9</button>
+          <button class="button operation-button" aria-label="Multiply">×</button>
+          
+          <button class="button number-button" aria-label="Four">4</button>
+          <button class="button number-button" aria-label="Five">5</button>
+          <button class="button number-button" aria-label="Six">6</button>
+          <button class="button operation-button" aria-label="Subtract">−</button>
+          
+          <button class="button number-button" aria-label="One">1</button>
+          <button class="button number-button" aria-label="Two">2</button>
+          <button class="button number-button" aria-label="Three">3</button>
+          <button class="button operation-button" aria-label="Add">+</button>
+          
+          <button class="button number-button zero-button" aria-label="Zero">0</button>
+          <button class="button decimal-button" aria-label="Decimal">.</button>
+          <button class="button equal-button" aria-label="Equals">=</button>
+        </div>
       </div>
-    </section>
-    <section id="results">
-      <h2 id="current-calculation">0</h2>
-      <h2>Result: <span id="current-result">0</span></h2>
-    </section>
-    <script src="assets/scripts/vendor.js"></script>
-    <script src="assets/scripts/app.js"></script>
+      
+      <footer class="footer">
+        <p>Press keyboard keys to use the calculator. ESC to clear.</p>
+      </footer>
+    </div>
+    
+    <script src="script.js"></script>
   </body>
 </html>
